@@ -2,61 +2,6 @@ body{
     
 }
 
-/* Navigation Bar */
-
-.navbar{
-  border: 0 none;
-  font-size: 16px;
-}
-.navbar-default {
-  background-color: #D9D9D9;
-  
-}
-.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:hover, .navbar-default .navbar-nav > .open > a:focus{
-  background-color: rgba(255, 255, 255, 0);
-  color: #2C93FF;
-}
-.navbar-transparent .navbar-nav > .active > a, .navbar-transparent .navbar-nav > .active > a:hover, .navbar-transparent .navbar-nav > .active > a:focus, .navbar-transparent .navbar-nav > li > a:hover, .navbar-transparent .navbar-nav > li > a:focus, [class*="navbar-ct"] .navbar-nav > .active > a, [class*="navbar-ct"] .navbar-nav > .active > a:hover, [class*="navbar-ct"] .navbar-nav > .active > a:focus, [class*="navbar-ct"] .navbar-nav > li > a:hover, [class*="navbar-ct"] .navbar-nav > li > a:focus {
-  background-color: rgba(255, 255, 255, 0);
-  border-radius: 3px;
-  color: #FFFFFF;
-  opacity: 1;
-}
-.navbar-transparent .navbar-nav > .dropdown > a .caret, [class*="navbar-ct"] .navbar-nav > .dropdown > a .caret{
-  border-bottom-color: #FFFFFF;
-  border-top-color: #FFFFFF;
-}
-.navbar-transparent .navbar-nav > .dropdown > a:hover .caret, .navbar-transparent .navbar-nav > .dropdown > a:focus .caret {
-  border-bottom-color: #FFFFFF;
-  border-top-color: #FFFFFF;
-}
-.navbar .btn{
-  font-size: 16px;
-  margin-top: 13px;
-  margin-bottom: 13px;
-}
-.navbar .btn-default{
-  color: #777777;
-  border-color: #777777;
-}
-.navbar-default:not(.navbar-transparent) .btn-default:hover{
-  color: #2C93FF;
-  border-color: #2C93FF;
-}
-.navbar-transparent .btn-default, [class*="navbar-ct"] .btn-default{
-  color: #FFFFFF;
-  border-color: #FFFFFF;
-}
-[class*="navbar-ct"] .btn-default.btn-fill{
-  color: #777777;
-  background-color: #FFFFFF;
-  opacity: 0.9;
-}
-[class*="navbar-ct"] .btn-default.btn-fill:hover, [class*="navbar-ct"] .btn-default.btn-fill:focus, [class*="navbar-ct"] .btn-default.btn-fill:active, [class*="navbar-ct"] .btn-default.btn-fill.active, [class*="navbar-ct"] .open .dropdown-toggle.btn-fill.btn-default{
-  border-color: #FFFFFF;
-  opacity: 1;
-}
-
 /* Background Styling */
 
 .modal-backdrop.in {
@@ -111,19 +56,13 @@ body{
 .main .sub-header{
   min-height: 140px;
 }
-.main .sub-header, .main .info-text{
+.main .sub-header, .main .info-text, label, p{
   font-size: 28px;
   color: #FFFFFF;
   text-shadow: 0 1px 4px rgba(0, 0, 0, 0.33);
   text-align: center;
   margin-top: 50px;
   
-}
-
-/* Quiz Modal */ 
-
-.container-fluid {
-  display: none;
 }
 
 }

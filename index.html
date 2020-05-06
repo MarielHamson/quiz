@@ -22,7 +22,7 @@
 </head>
 
 <body>
-<!--Navigation Bar-->
+<!-- Navigation Bar
 <nav class="navbar navbar-transparent navbar-fixed-top" role="navigation">  
   <div class="container">
     <div class="navbar-header">
@@ -52,7 +52,7 @@
       </ul>
     </div>
   </div>
-</nav>
+</nav> -->
 
 <!--Background and content-->
 <div class="main" style="background-image: url('img/background.jpg')">  
@@ -64,36 +64,108 @@
         </h1>        
         <div class="content">
             <h4 class="sub-header">Take this quiz to find out!</h4>
-            <!--Submit name in form-->
-                <div class="row">
-                    <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
-                        <form class="form-inline" role="form">
-                          <div class="form-group">
-                            <label class="sr-only" for="exampleInputName">Name</label>
-                            <input type="name" class="form-control transparent" placeholder="Your name here...">
-                          </div>
-                          <button type="submit" class="btn btn-danger btn-fill">Start Now</button>
-                        </form>
-                    </div>
-                </div>
+
+           <!--Submit name in form-->
+           <div class="row">
+            <div class="col-md-4 col-md-offset-4 col-sm6-6 col-sm-offset-3 ">
+                <form class="form-inline" role="form">
+                  <div class="form-group">
+                    <label class="sr-only" for="exampleInputName">Name</label>
+                    <input type="name" class="form-control transparent" placeholder="Your name here...">
+                  </div>
+                  <button type="submit" class="btn btn-danger btn-fill">Start Now</button>
+                </form>
             </div>
         </div>
-    </div>
 
-  <!-- Quiz Modal --> 
-    <div class="container-fluid bg-info">
-      <div class="modal-dialog">
-        <div class="modal-content">
-           <div class="modal-header">
-              <h3><span class="label label-warning" id="qid">1</span> Choose One </h3>
+            <form id="quiz">
+              <p>What kind of programming is interesting to you?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer1" value="1" checked>
+                  Front End Web Development
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer1" value="2">
+                  Back End Web Development
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer1" value="3">
+                  App Development
+                </label>
+              </div>        
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer1" value="4">
+                  All of it
+                </label>
+              </div>
+            <p>What kind of pet do you have/like?</p>
+            <div class="radio">
+              <label>
+                <input type="radio" name="answer2" value="1" checked>
+                Dog
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="answer2" value="2">
+                Cat
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="answer2" value="3">
+                Parrot
+              </label>
+            </div>        
+            <div class="radio">
+              <label>
+                <input type="radio" name="answer2" value="4">
+                Turtle
+              </label>
+            </div>
+            
+            <p>Who is your celebrity crush?</p>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer3" value="1" checked>
+                  Tom Arnold
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer3" value="2">
+                  Justin Bieber
+                </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer3" value="3">
+                  Jessica Rabbit
+                </label>
+              </div>        
+              <div class="radio">
+                <label>
+                  <input type="radio" name="answer3" value="4">
+                  Angelina Jolie
+                </label>
+              </div>
+              <div class="form-group">
+                <input type="submit" value="Submit" class="btn btn-default">
+              </div>
+            </form>
+            <div id="output">
+      
+            </div>
           </div>
-          <div class="modal-body">
-              
+        </div>
+        </div>
 
-         </div>
-     </div>
-     <div class="modal-footer text-muted">
-      <span id="answer"></span>
  </div>
  </body>
 </html>
