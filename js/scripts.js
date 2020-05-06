@@ -16,11 +16,11 @@ $(document).ready(function() {
     var number3 = parseInt($("input:radio[name=answer3]:checked").val());
     var result = add(number1, number2, number3);
 
-    if (result >= 3 && result <= 6) {
+    if (result >= 5 && result <= 8) {
       alert("You should study Ruby");
-    } else if (result >=7 && result <= 10) {
+    } else if (result >=9 && result <= 12) {
       alert("You should study JavaScript");
-    } else if (result >= 11) {
+    } else if (result >= 13) {
       alert("You should study Python");
     }
   });
