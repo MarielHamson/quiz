@@ -17,11 +17,11 @@ $(document).ready(function() {
     var result = add(number1, number2, number3);
 
     if (result >= 3 && result <= 6) {
-      alert("You are Leah");
+      alert("You should study Ruby");
     } else if (result >=7 && result <= 10) {
-      alert("You are Chewie");
+      alert("You should study JavaScript");
     } else if (result >= 11) {
-      alert("You are R2D2");
+      alert("You should study Python");
     }
   });
 });
