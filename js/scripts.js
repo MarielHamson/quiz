@@ -1,8 +1,6 @@
-
 // Business logic
-
 var add = function(number1, number2, number3, number4, number5) {
-	return number1 + number2 + number3 + number4 + number5;
+  return number1 + number2 + number3 + number4 + number5;
 };
 
 // Interface logic
@@ -11,7 +9,7 @@ $(document).ready(function() {
   $(".form-inline").submit(function(event) {
     firstName = $("input#name").val();
 
-    $("#quiz").show();
+    $("#quiz").fadeIn();
 
     event.preventDefault();
   });
@@ -24,10 +22,10 @@ $(document).ready(function() {
     var number4 = parseInt($("input:radio[name=answer4]:checked").val());
     var number5 = parseInt($("input:radio[name=answer5]:checked").val());
     var result = add(number1, number2, number3, number4, number5);
-    
+
     if (result >= 5 && result <= 8) {
       alert(firstName + ", You should study Ruby");
-    } else if (result >=9 && result <= 12) {
+    } else if (result >= 9 && result <= 12) {
       alert(firstName + ", You should study JavaScript");
     } else if (result >= 13) {
       alert(firstName + ", You should study Python");
