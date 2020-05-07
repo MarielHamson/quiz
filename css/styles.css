@@ -30,6 +30,10 @@ body{
 
 /* Main Text Styling and Spacing */
 
+#quiz {
+  display: none;
+}
+
 .quiz-name-container .brand{
   font-size: 18px;
   color: #FFFFFF;

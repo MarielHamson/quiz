@@ -8,6 +8,13 @@ var add = function(number1, number2, number3, number4, number5) {
 // Interface logic
 
 $(document).ready(function() {
+  $(".form-inline").submit(function(event) {
+    firstName = $("input#name").val();
+
+    $("#quiz").show();
+
+    event.preventDefault();
+  });
 
   $("form#quiz").submit(function() {
     event.preventDefault();
@@ -19,11 +26,11 @@ $(document).ready(function() {
     var result = add(number1, number2, number3, number4, number5);
     
     if (result >= 5 && result <= 8) {
-      alert("You should study Ruby");
+      alert(firstName + " " + "You should study Ruby");
     } else if (result >=9 && result <= 12) {
-      alert("You should study JavaScript");
+      alert(firstName + " " + "You should study JavaScript");
     } else if (result >= 13) {
-      alert("You should study Python");
+      alert(firstName + " " + "You should study Python");
     }
   });
 });
