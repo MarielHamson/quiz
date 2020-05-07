@@ -28,7 +28,7 @@ $(document).ready(function() {
     } else if (result >= 9 && result <= 12) {
       alert(firstName + ", " + "you should study JavaScript");
     } else if (result >= 13) {
-      alert(firstName + ", ", "you should study Python");
+      alert(firstName + "," + "you should study Python");
     }
   });
 });
