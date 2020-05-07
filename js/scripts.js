@@ -24,11 +24,11 @@ $(document).ready(function() {
     var result = add(number1, number2, number3, number4, number5);
 
     if (result >= 5 && result <= 8) {
-      alert(firstName + "," + "you should study Ruby");
+      alert(firstName + ", " + "you should study Ruby");
     } else if (result >= 9 && result <= 12) {
-      alert(firstName + "," + "you should study JavaScript");
+      alert(firstName + ", " + "you should study JavaScript");
     } else if (result >= 13) {
-      alert(firstName + ",", "you should study Python");
+      alert(firstName + ", ", "you should study Python");
     }
   });
 });
