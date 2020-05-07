@@ -26,11 +26,11 @@ $(document).ready(function() {
     var result = add(number1, number2, number3, number4, number5);
     
     if (result >= 5 && result <= 8) {
-      alert(firstName + " " + "You should study Ruby");
+      alert(firstName + ", You should study Ruby");
     } else if (result >=9 && result <= 12) {
-      alert(firstName + " " + "You should study JavaScript");
+      alert(firstName + ", You should study JavaScript");
     } else if (result >= 13) {
-      alert(firstName + " " + "You should study Python");
+      alert(firstName + ", You should study Python");
     }
   });
 });
